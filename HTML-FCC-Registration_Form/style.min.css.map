@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.scss"],"names":[],"mappings":"AAAA,EACE,QAAA,CACA,SAAA,CACA,qBAAA,CAEF,KACE,qBAAA","file":"style.min.css","sourcesContent":["* {\r\n  margin: 0;\r\n  padding: 0;\r\n  box-sizing: border-box;\r\n}\r\nbody {\r\n  background-color: #ff00ff;\r\n}\r\n"]}
