@@ -4,33 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FCC-Project-1-Survey_Form</title>
+    <link rel="stylesheet" href="style.min.css" />
   </head>
   <body>
-    <h1 id="title">Survey Form</h1>
+    <h1 id="title">Software Development - A Survey</h1>
     <p id="description">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, illo
-      reiciendis! Vitae minima voluptas sint est quibusdam amet ullam id!
+      Software Development in general is considered to be an ocean.It has
+      various domains/branches.If a person wants to be a successful software
+      developer he/she should be picking one or two domains to concentrate on
+      one particular area and become an expert SDE.
     </p>
     <form id="survey-form" action="" method="post">
-      <label id="name-label" for=""
-        ><input placeholder="Enter Your Name" type="text" name="name" id="name"
-      /></label>
-      <label for="" id="email-label"
-        ><input
-          placeholder="Enter Your E-mail"
-          type="email"
-          name="email"
-          id="email"
-      /></label>
-      <label for="" id="number-label"
-        ><input
-          placeholder="Enter Your Age"
-          min="18"
-          max="75"
-          type="number"
-          name="number"
-          id="number"
-      /></label>
+      <fieldset>
+        <label id="name-label" for="name"
+          >Please enter your name:
+          <input
+            placeholder="Enter Your Name"
+            type="text"
+            name="name"
+            id="name"
+        /></label>
+        <label for="" id="email-label"
+          >Please enter your e-mail:
+          <input
+            placeholder="Enter Your E-mail"
+            type="email"
+            name="email"
+            id="email"
+        /></label>
+        <label for="" id="number-label"
+          >Please enter your age:
+          <input
+            placeholder="Enter Your Age"
+            min="18"
+            max="75"
+            type="number"
+            name="number"
+            id="number"
+        /></label>
+      </fieldset>
+
       <select name="" id="dropdown">
         <option value=""></option>
         <option value=""></option>
