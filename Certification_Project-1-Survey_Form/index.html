@@ -7,61 +7,124 @@
     <link rel="stylesheet" href="style.min.css" />
   </head>
   <body>
-    <h1 id="title">Software Development - A Survey</h1>
-    <p id="description">
-      Software Development in general is considered to be an ocean.It has
-      various domains/branches.If a person wants to be a successful software
-      developer he/she should be picking one or two domains to concentrate on
-      one particular area and become an expert SDE.
-    </p>
-    <form id="survey-form" action="" method="post">
-      <fieldset>
-        <label id="name-label" for="name"
-          >Please enter your name:
-          <input
-            placeholder="Enter Your Name"
-            type="text"
-            name="name"
-            id="name"
-        /></label>
-        <label for="" id="email-label"
-          >Please enter your e-mail:
-          <input
-            placeholder="Enter Your E-mail"
-            type="email"
-            name="email"
-            id="email"
-        /></label>
-        <label for="" id="number-label"
-          >Please enter your age:
-          <input
-            placeholder="Enter Your Age"
-            min="18"
-            max="75"
-            type="number"
-            name="number"
-            id="number"
-        /></label>
-      </fieldset>
-
-      <select name="" id="dropdown">
-        <option value=""></option>
-        <option value=""></option>
-      </select>
-      <label for="">
-        <input type="radio" name="radio-group" id="" />
-        <input type="radio" name="radio-group" id="" />
-      </label>
-      <label for="">
-        <input type="checkbox" name="" id="" value="" />
-        <input type="checkbox" name="" id="" value="" />
-        <input type="checkbox" name="" id="" value="" />
-        <input type="checkbox" name="" id="" value="" />
-      </label>
-      <label for="comments">
-        <textarea name="" id="" cols="30" rows="3"></textarea>
-      </label>
-      <button type="submit" id="submit"></button>
-    </form>
+    <div class="container">
+      <header>
+        <h1 id="title">Software Development -Survey</h1>
+        <p id="description">
+          Software Development in general is considered to be an ocean.It has
+          various domains/branches.If a person wants to be a successful software
+          developer he/she should be picking one or two domains to concentrate
+          on one particular area and become an expert SDE.
+        </p>
+      </header>
+      <main>
+        <form id="survey-form" action="" method="post">
+          <fieldset class="personal-details">
+            <label id="name-label" for="name"
+              >Please enter your name:
+              <input
+                required
+                placeholder="Enter Your Name"
+                type="text"
+                name="name"
+                id="name"
+            /></label>
+            <label for="" id="email-label"
+              >Please enter your e-mail:
+              <input
+                required
+                placeholder="Enter Your E-mail"
+                type="email"
+                name="email"
+                id="email"
+            /></label>
+            <label for="" id="number-label"
+              >Please enter your age:
+              <input
+                required
+                placeholder="Enter Your Age"
+                min="18"
+                max="75"
+                type="number"
+                name="number"
+                id="number"
+            /></label>
+          </fieldset>
+          <label for="domain">
+            <select name="" id="dropdown">
+              <option value="Web Development">Web Development</option>
+              <option value="Mobile App Development">
+                Mobile App Development
+              </option>
+              <option value="Desktop App Development">
+                Desktop App Development
+              </option>
+              <option value="Game Development">Game Development</option>
+              <option value="Embedded Systems Development">
+                Embedded Systems Development
+              </option>
+              <option value="DevOps">DevOps</option>
+              <option value="Cloud Computing">Cloud Computing</option>
+              <option value="Artificial Intelligence (AI) and Machine Learning">
+                Artificial Intelligence (AI) and Machine Learning (ML)
+              </option>
+              <option value="Data Science and Analytics">
+                Data Science and Analytics
+              </option>
+              <option value="Cybersecurity">Cybersecurity</option>
+            </select>
+          </label>
+          <label for="work-type"
+            >Which working style do you prefer?<input
+              value="work-home"
+              type="radio"
+              name="work-type"
+              id="work-home"
+            />Work From Home
+            <input
+              value="work-office"
+              type="radio"
+              name="work-type"
+              id="work-office"
+            />Work From Office
+            <input
+              value="work-hybrid"
+              type="radio"
+              name="work-type"
+              id="work-hybrid"
+            />Hybrid
+          </label>
+          <label for="skills"
+            >As a developer which skills are considered to be crutial to you?
+            <input
+              type="checkbox"
+              name=""
+              id=""
+              value="problem_solving"
+            />Problem Solving
+            <input
+              type="checkbox"
+              name="skills"
+              id=""
+              value="critical_thinking"
+            />Critical Thinking
+            <input type="checkbox" name="skills" id="" value="coding" />Coding
+            <input
+              type="checkbox"
+              name="skills"
+              id=""
+              value="degree"
+            />Engineering Degree
+          </label>
+          <label for="comments">
+            <textarea name="" id="" cols="30" rows="3"></textarea>
+          </label>
+          <button type="submit" id="submit">Submit</button>
+        </form>
+      </main>
+      <footer>
+        <p>&copy;XYZ Survey 2023</p>
+      </footer>
+    </div>
   </body>
 </html>
