@@ -19,38 +19,37 @@
       </header>
       <main>
         <form id="survey-form" action="" method="post">
-          <fieldset class="personal-details">
-            <label id="name-label" for="name"
-              >Please enter your name:
-              <input
-                required
-                placeholder="Enter Your Name"
-                type="text"
-                name="name"
-                id="name"
-            /></label>
-            <label for="" id="email-label"
-              >Please enter your e-mail:
-              <input
-                required
-                placeholder="Enter Your E-mail"
-                type="email"
-                name="email"
-                id="email"
-            /></label>
-            <label for="" id="number-label"
-              >Please enter your age:
-              <input
-                required
-                placeholder="Enter Your Age"
-                min="18"
-                max="75"
-                type="number"
-                name="number"
-                id="number"
-            /></label>
-          </fieldset>
-          <label for="domain">
+          <label id="name-label" for="name"
+            >Please enter your name:
+            <input
+              required
+              placeholder="Enter Your Name"
+              type="text"
+              name="name"
+              id="name"
+          /></label>
+          <label for="" id="email-label"
+            >Please enter your e-mail:
+            <input
+              required
+              placeholder="Enter Your E-mail"
+              type="email"
+              name="email"
+              id="email"
+          /></label>
+          <label for="" id="number-label"
+            >Please enter your age:
+            <input
+              required
+              placeholder="Enter Your Age"
+              min="18"
+              max="75"
+              type="number"
+              name="number"
+              id="number"
+          /></label>
+          <label for="domain" class="domain-select">
+            Which domain interests you the most?
             <select name="" id="dropdown">
               <option value="Web Development">Web Development</option>
               <option value="Mobile App Development">
@@ -74,26 +73,29 @@
               <option value="Cybersecurity">Cybersecurity</option>
             </select>
           </label>
-          <label for="work-type"
-            >Which working style do you prefer?<input
-              value="work-home"
-              type="radio"
-              name="work-type"
-              id="work-home"
-            />Work From Home
-            <input
-              value="work-office"
-              type="radio"
-              name="work-type"
-              id="work-office"
-            />Work From Office
-            <input
-              value="work-hybrid"
-              type="radio"
-              name="work-type"
-              id="work-hybrid"
-            />Hybrid
-          </label>
+          <!-- Radio-container -->
+          <div class="radio-container">
+            <label for="work-type"
+              >Which working style do you prefer?<input
+                value="work-home"
+                type="radio"
+                name="work-type"
+                id="work-home"
+              />Work From Home
+              <input
+                value="work-office"
+                type="radio"
+                name="work-type"
+                id="work-office"
+              />Work From Office
+              <input
+                value="work-hybrid"
+                type="radio"
+                name="work-type"
+                id="work-hybrid"
+              />Hybrid
+            </label>
+          </div>
           <label for="skills"
             >As a developer which skills are considered to be crutial to you?
             <input
