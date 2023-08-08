@@ -9,7 +9,7 @@
   <body>
     <div class="container">
       <header>
-        <h1 id="title">Software Development -Survey</h1>
+        <h1 id="title">Software Development - Survey</h1>
         <p id="description">
           Software Development in general is considered to be an ocean.It has
           various domains/branches.If a person wants to be a successful software
@@ -49,7 +49,7 @@
               id="number"
           /></label>
           <label for="domain" class="domain-select">
-            Which domain interests you the most?
+            <p>Which domain interests you the most?</p>
             <select name="" id="dropdown">
               <option value="Web Development">Web Development</option>
               <option value="Mobile App Development">
@@ -75,20 +75,29 @@
           </label>
           <!-- Radio-container -->
           <div class="radio-container">
-            <label for="work-type"
-              >Which working style do you prefer?<input
+            <p>Which working style do you prefer?</p>
+            <label for="work-home"
+              ><input
+                checked
+                class="inline"
                 value="work-home"
                 type="radio"
                 name="work-type"
                 id="work-home"
               />Work From Home
+            </label>
+            <label for="work-office">
               <input
+                class="inline"
                 value="work-office"
                 type="radio"
                 name="work-type"
                 id="work-office"
               />Work From Office
+            </label>
+            <label for="work-hybrid">
               <input
+                class="inline"
                 value="work-hybrid"
                 type="radio"
                 name="work-type"
@@ -96,28 +105,49 @@
               />Hybrid
             </label>
           </div>
-          <label for="skills"
-            >As a developer which skills are considered to be crutial to you?
-            <input
-              type="checkbox"
-              name=""
-              id=""
-              value="problem_solving"
-            />Problem Solving
-            <input
-              type="checkbox"
-              name="skills"
-              id=""
-              value="critical_thinking"
-            />Critical Thinking
-            <input type="checkbox" name="skills" id="" value="coding" />Coding
-            <input
-              type="checkbox"
-              name="skills"
-              id=""
-              value="degree"
-            />Engineering Degree
-          </label>
+          <!-- Checkbox-container -->
+          <div class="checkbox-container">
+            <p>
+              As a developer which skills are considered to be crutial to you?
+            </p>
+            <label for="problem-solving">
+              <input
+                checked
+                class="inline"
+                type="checkbox"
+                name="skills"
+                id="problem-solving"
+                value="problem_solving"
+              />Problem Solving
+            </label>
+            <label for="critical-thinking">
+              <input
+                class="inline"
+                type="checkbox"
+                name="skills"
+                id="critical-thinking"
+                value="critical-thinking"
+              />Critical Thinking
+            </label>
+            <label>
+              <input
+                class="inline"
+                type="checkbox"
+                name="skills"
+                id=""
+                value="coding"
+              />Coding</label
+            >
+            <label for="engineering-degree">
+              <input
+                class="inline"
+                type="checkbox"
+                name="skills"
+                id="engineering-degree"
+                value="degree"
+              />Engineering Degree
+            </label>
+          </div>
           <label for="comments">
             <textarea name="" id="" cols="30" rows="3"></textarea>
           </label>
