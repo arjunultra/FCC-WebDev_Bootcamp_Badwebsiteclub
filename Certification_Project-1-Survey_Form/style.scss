@@ -75,6 +75,7 @@ button {
     background-color: whitesmoke;
     color: magenta;
     border: 1px wheat black;
+    font-weight: 700;
   }
   &:active,
   :focus {
@@ -93,4 +94,10 @@ a {
 }
 .checkbox-container {
   margin-bottom: 2em;
+}
+footer {
+  width: 100vw;
+  background-color: palevioletred;
+  text-align: center;
+  padding: 0.000456em;
 }
