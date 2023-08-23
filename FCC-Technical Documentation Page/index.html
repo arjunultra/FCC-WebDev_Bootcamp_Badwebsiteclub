@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FCC-Technical Documentation Project</title>
+    <link rel="stylesheet" href="style.min.css" />
+  </head>
+  <body>
+    <header>
+      <nav></nav>
+    </header>
+    <main id="main-doc">
+      <h1>Tailwindcss Documentation</h1>
+      <p>
+        Tailwind CSS works by scanning all of your HTML files, JavaScript
+        components, and any other templates for class names, generating the
+        corresponding styles and then writing them to a static CSS file. It's
+        fast, flexible, and reliable — with zero-runtime.
+      </p>
+      <section class="main-section" id="get_started">
+        <header><h2>Get started</h2></header>
+        <p>
+          The simplest and fastest way to get up and running with Tailwind CSS
+          from scratch is with the Tailwind CLI tool. The CLI is also available
+          as a standalone executable if you want to use it without installing
+          Node.js.
+        </p>
+        <div class="container p-2">
+          <p>
+            Install tailwindcss via npm, and create your tailwind.config.js
+            file.
+          </p>
+          <code
+            ><span>npm install -D tailwindcss</span
+            ><span>npx tailwindcss init</span></code
+          >
+        </div>
+        <div class="container p-2">
+          <p>
+            Configure your template paths Add the paths to all of your template
+            files in your tailwind.config.js file.
+          </p>
+          <code>
+            /** @type {import('tailwindcss').Config} */ module.exports = {
+            content: ["./src/**/*.{html,js}"], theme: { extend: {}, }, plugins:
+            [], }
+          </code>
+        </div>
+        <div class="container p-2">
+          <p>
+            Add the @tailwind directives for each of Tailwind's layers to your
+            main CSS file.
+          </p>
+          <code
+            ><span>@tailwind base;</span>
+            <span>@tailwind components;</span>
+            <span>@tailwind utilities;</span>
+          </code>
+        </div>
+        <div class="container p-2">
+          <p>
+            Start the Tailwind CLI build process Run the CLI tool to scan your
+            template files for classes and build your CSS.
+          </p>
+          <code>
+            npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
+          </code>
+        </div>
+        <div class="container p-2">
+          <p>
+            Start using Tailwind in your HTML Add your compiled CSS file to the
+            and start using Tailwind's utility classes to style your content.
+          </p>
+          <pre><code>&lt;link href="/dist/output.css" rel="stylesheet"&gt;
+          </code></pre>
+        </div>
+      </section>
+      <section class="main-section" id="core_concepts">
+        <header><h2>Core Concepts</h2></header>
+      </section>
+      <section class="main-section" id="utility_first">
+        <header><h2>Utility First</h2></header>
+      </section>
+      <section class="main-section" id="hover_focus">
+        <header><h2>Hover, Focus States</h2></header>
+      </section>
+      <section class="main-section" id="responsive_design">
+        <header>
+          <h2>Responsive Design</h2>
+        </header>
+      </section>
+    </main>
+  </body>
+</html>
