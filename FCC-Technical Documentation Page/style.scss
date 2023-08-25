@@ -1,27 +1,24 @@
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
+  // margin: 0;
+  // padding: 0;
 }
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 1.5rem;
-  background-color: #0e1729;
-  color: white;
+  display: flex;
+}
+#navbar {
+  background-color: red;
+  width: 25%;
+  height: 280vh;
+}
+#main-doc {
+  width: 80%;
+  height: 100vh;
 }
 code {
-  background-color: black;
-  color: white;
-  display: flex;
-  flex-direction: column;
-}
-.container {
-  display: flex;
-  gap: 2em;
-  p {
-    max-width: 20em;
-  }
-}
-.p-2 {
-  padding: 2em;
+  background-color: #1d293a;
+  color: #ffffff;
+  display: inline-block;
+  padding: 1em;
+  max-width: 35em;
 }
