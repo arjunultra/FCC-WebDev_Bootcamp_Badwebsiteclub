@@ -23,3 +23,22 @@ body {
     text-decoration: none;
   }
 }
+main {
+  display: flex;
+  .hero-img-container,
+  .text-container {
+    width: 50%;
+  }
+  .hero-img-container {
+    .hero-img {
+      width: 100%;
+    }
+  }
+  .text-container {
+    background-color: #091c48;
+    color: #f69f29;
+  }
+}
+.flex-item {
+  flex: 1;
+}
