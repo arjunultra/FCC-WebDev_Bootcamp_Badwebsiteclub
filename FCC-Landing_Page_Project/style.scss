@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#header-img {
+  width: 100px;
+  height: 100px;
+}
+#nav-bar {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  width: 100vw;
+  background-color: black;
+  height: 25%;
+  .nav-link {
+    color: #c69943;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+}
