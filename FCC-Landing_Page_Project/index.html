@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header id="header">
+        <img
+          id="header-img"
+          class="logo"
+          src="https://design-course-landing-page.onrender.com/assets/logo.svg"
+          alt="23andfour logo"
+        />
+        <nav id="nav-bar">
+          <a class="hide-desktop" href="#"
+            ><img
+              class="menu"
+              id="menu"
+              src="https://design-course-landing-page.onrender.com/assets/ham.svg"
+              alt="toggle menu"
+          /></a>
+          <ul class="show-desktop hide-mobile" id="nav-container">
+            <li id="exit" class="exit-btn hide-desktop">
+              <img src="./assets/exit.svg" alt="exit nav" />
+            </li>
+            <li><a class="nav-link" href="#home">Home</a></li>
+            <li><a class="nav-link" href="#services">Services</a></li>
+            <li><a class="nav-link" href="#testimonials">Testimonials</a></li>
+            <li><a class="nav-link" href="#footer">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section id="home">
+        <img
+          class="server"
+          src="https://design-course-landing-page.onrender.com/assets/server.svg"
+          alt="server graphic"
+        />
+        <h1>Web Hosting for the Modern Era</h1>
+        <p class="sub-head">Go serverless and pay for what you use.</p>
+        <img
+          class="hide-mobile show-desktop scroll"
+          src="https://design-course-landing-page.onrender.com/assets/scroll.svg"
+          alt="scroll animation"
+        />
+      </section>
+    </div>
+    <section id="services">
+      <div class="blue-container">
+        <div class="container">
+          <ul>
+            <li>
+              <img
+                src="https://design-course-landing-page.onrender.com/assets/icon-1.svg"
+                alt="calendar icon"
+              />
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Distinctio eos voluptatibus doloribus porro. In inventore eum,
+                ipsam odio dolorem saepe.
+              </p>
+            </li>
+            <li>
+              <img
+                src="https://design-course-landing-page.onrender.com/assets/icon-2.svg"
+              />
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Distinctio eos voluptatibus doloribus porro. In inventore eum,
+                ipsam odio dolorem saepe.
+              </p>
+            </li>
+            <li class="last-li">
+              <img
+                class="last-img"
+                src="https://design-course-landing-page.onrender.com/assets/icon-3.svg"
+                alt="phone icon"
+              />
+              <p class="lastimg-p">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Distinctio eos voluptatibus doloribus porro. In inventore eum,
+                ipsam odio dolorem saepe.
+              </p>
+            </li>
+          </ul>
+        </div>
+        <!-- iframe -->
+        <iframe
+          class="hide-desktop"
+          id="video"
+          src="https://www.youtube.com/embed/8gNrZ4lAnAw?si=HQ_OMSWxO6U9gGNd"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+    <section id="testimonials">
+      <div class="grey-container">
+        <div class="container">
+          <ul>
+            <li>
+              <figure>
+                <img
+                  src="https://design-course-landing-page.onrender.com/assets/user1.png"
+                  alt="user testimonial picture"
+                />
+                <blockquote>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Officia, vel quidem omnis dolore aliquam cupiditate ex ullam
+                  unde tempore culpa.
+                </blockquote>
+                <figcaption>- Asa Akira</figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img
+                  src="https://design-course-landing-page.onrender.com/assets/user2.png"
+                  alt="user testimonial picture"
+                />
+                <blockquote>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Officia, vel quidem omnis dolore aliquam cupiditate ex ullam
+                  unde tempore culpa.
+                </blockquote>
+                <figcaption>- Mark Williams</figcaption>
+              </figure>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <h2>Start your free trail now!</h2>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input
+          name="email"
+          id="email"
+          type="email"
+          placeholder="Enter Your E-mail"
+        />
+        <input id="submit" class="cta" type="submit" value="submit" />
+      </form>
+    </div>
+    <footer id="footer">
+      <div class="footer-container">
+        <div class="container">
+          <a href="#">
+            <img
+              class="logo"
+              src="https://design-course-landing-page.onrender.com/assets/logo-white.svg"
+              alt="logo"
+          /></a>
+          <div class="address-container">
+            <address>Melrose Place,90210 <br />USA</address>
+            <ul class="footer-links">
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
