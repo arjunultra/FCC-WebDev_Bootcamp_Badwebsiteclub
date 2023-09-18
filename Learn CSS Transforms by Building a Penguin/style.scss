@@ -5,6 +5,8 @@
 }
 :root {
   --penguin-face: white;
+  --penguin-picorna: orange;
+  --penguin-skin: gray;
 }
 body {
   background: linear-gradient(45deg, rgb(118, 201, 255), rgb(247, 255, 222));
@@ -51,6 +53,7 @@ body {
   margin-top: 75px;
   position: relative;
   z-index: 4;
+  transition: transform 1s ease-in-out 0ms;
   .penguin-head {
     width: 50%;
     height: 45%;
@@ -118,7 +121,7 @@ body {
     }
     .beak {
       height: 10%;
-      background-color: orange;
+      background-color: var(--penguin-picorna);
       border-radius: 50%;
     }
     .beak.top {
@@ -134,6 +137,24 @@ body {
       left: 42%;
     }
   }
+  .shirt {
+    color: #6a6969;
+    font-size: 25px;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    position: absolute;
+    top: 165px;
+    left: 127.5px;
+    z-index: 1;
+    p {
+      top: 22.5px;
+    }
+    div {
+      font-weight: initial;
+      top: 22.5px;
+      left: 12px;
+    }
+  }
   .penguin-body {
     width: 53%;
     height: 45%;
@@ -146,20 +167,48 @@ body {
     border-radius: 80% 80% 100% 100%;
     top: 40%;
     left: 23.5%;
-    .shirt {
-      font-size: 25px;
-      font-family: Helvetica, sans-serif;
-      font-weight: bold;
+    .arm {
+      width: 30%;
+      height: 60%;
+      background: linear-gradient(
+        90deg,
+        var(--penguin-skin),
+        rgb(209, 210, 199)
+      );
+      border-radius: 30% 30% 30% 120%;
+      z-index: -1;
+    }
+    .arm.left {
+      top: 35%;
+      left: 5%;
+      transform-origin: top left;
+      transform: rotate(130deg), scaleX(-1);
+      animation: 3s linear infinite wave;
+    }
+    .arm.right {
       position: absolute;
-      top: 165px;
-      left: 127.5px;
-      z-index: 1;
-      div {
-        font-weight: normal;
-        position: absolute;
-        top: 22.5px;
-        left: 12px;
-      }
+      top: 0%;
+      right: -5%;
+      transform: rotate(-45deg);
+    }
+    .foot {
+      width: 15%;
+      height: 30%;
+      background-color: var(--penguin-picorna);
+      position: absolute;
+      top: 85%;
+      border-radius: 50%;
+      z-index: -1;
+    }
+    .foot.left {
+      position: absolute;
+      left: 25%;
+      transform: rotate(80deg);
+    }
+    .foot.right {
+      position: absolute;
+      right: 25%;
+      transform: rotate(-80deg);
     }
   }
   .penguin-body::before {
@@ -167,7 +216,7 @@ body {
     position: absolute;
     width: 50%;
     height: 45%;
-    background-color: gray;
+    background-color: var(--penguin-skin);
     top: 10%;
     left: 25%;
     border-radius: 0% 0% 100% 100%;
@@ -177,7 +226,7 @@ body {
 
 .ground {
   width: 100vw;
-  height: 400px;
+  height: calc(100vh - 300px);
   background: linear-gradient(90deg, rgb(88, 175, 236), rgb(182, 255, 255));
   z-index: 3;
   position: absolute;
@@ -190,4 +239,18 @@ body {
   width: 15%;
   height: 17%;
   background-color: black;
+}
+@keyframes wave {
+  10% {
+    transform: rotate(110deg) scaleX(-1);
+  }
+  20% {
+    transform: rotate(130deg) scaleX(-1);
+  }
+  30% {
+    transform: rotate(110deg) scaleX(-1);
+  }
+  40% {
+    transform: rotate(130deg) scaleX(-1);
+  }
 }
