@@ -182,7 +182,7 @@ body {
       top: 35%;
       left: 5%;
       transform-origin: top left;
-      transform: rotate(130deg), scaleX(-1);
+      transform: rotate(130deg) scaleX(-1);
       animation: 3s linear infinite wave;
     }
     .arm.right {
@@ -232,9 +232,7 @@ body {
   position: absolute;
   margin-top: -58px;
 }
-.left {
-  left: 5%;
-}
+
 .eye {
   width: 15%;
   height: 17%;
