@@ -114,3 +114,26 @@ nav {
     font-weight: 400;
   }
 }
+#contact-section {
+  background-color: #303841;
+  color: var(--main-white);
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  h2 {
+    font-size: 4rem;
+  }
+  .fa-icons-container {
+    margin-top: 2em;
+    gap: 1em 2em;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .flex-container {
+    display: flex;
+    gap: 0 1em;
+  }
+}
