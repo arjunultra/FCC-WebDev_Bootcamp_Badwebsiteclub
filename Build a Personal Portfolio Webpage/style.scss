@@ -11,6 +11,8 @@ body {
   height: 100vh;
   width: 100%;
   font-family: "Poppins", sans-serif;
+  background-color: #44557b;
+  overflow-x: hidden;
 }
 nav {
   background-color: #c32f43;
@@ -54,29 +56,61 @@ nav {
   }
 }
 #projects-section {
-  background-color: #44557b;
   color: var(--main-white);
   padding: 5em;
+  text-align: center;
   h2 {
     font-size: 2rem;
     text-align: center;
-    width: 12em;
+    max-width: 23em;
   }
-  .project-one-inner-container {
-    border: 5px solid red;
-    padding: 2em;
+  .projects-container {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 100%;
-    .image-container {
-      width: 70%;
-      height: 50vh;
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 2em;
+  }
+  .project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    margin-top: 2em;
+    width: 27em;
+    height: 22em;
+    margin-left: 1.9em;
+    .project-img {
+      height: calc(100% - 6.8rem);
+      width: 100%;
+      object-fit: cover;
     }
+    p {
+      padding: 1em 2em;
+      background-color: #2f3841;
+    }
+  }
+  .project-container.m-0 {
+    margin-top: 0;
+  }
+  .project-container.minus1 {
+    margin-top: -1em;
+  }
+  .project-container.minus2 {
+    margin-top: -2em;
+  }
+  .project-container.minus3 {
+    margin-top: -3em;
+  }
+  .project-container.minus4 {
+    margin-top: -4em;
+  }
+  #submit-btn {
+    background-color: #2f3841;
+    color: var(--main-white);
+    padding: 1em 2em;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 400;
   }
 }
