@@ -133,15 +133,7 @@ nav {
     grid-template-rows: 1fr;
     grid-template-columns: repeat(3, 1fr);
   }
-  .flex-container {
-    display: flex;
-    gap: 0 2em;
-    align-items: center;
-    justify-content: center;
-  }
-  p.negative-space {
-    margin-left: -1.4em;
-  }
+
   padding-bottom: 5em;
 }
 footer {
