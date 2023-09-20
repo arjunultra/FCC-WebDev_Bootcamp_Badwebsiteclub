@@ -57,7 +57,6 @@ nav {
 }
 #projects-section {
   color: var(--main-white);
-  padding: 5em;
   text-align: center;
   h2 {
     font-size: 2rem;
@@ -65,46 +64,46 @@ nav {
     max-width: 23em;
   }
   .projects-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr;
     align-items: center;
-    margin-right: 2em;
+    gap: 2em 0;
+    margin: 2em 0;
   }
   .project-container {
     display: flex;
     flex-direction: column;
-    align-items: stretch;
     justify-content: center;
-    margin-top: 2em;
     width: 27em;
-    height: 22em;
+    // height: 22em;
     margin-left: 1.9em;
     .project-img {
-      height: calc(100% - 6.8rem);
+      height: 15em;
       width: 100%;
       object-fit: cover;
     }
     p {
       padding: 1em 2em;
       background-color: #2f3841;
+      width: 100%;
+      height: 4em;
     }
   }
-  .project-container.m-0 {
-    margin-top: 0;
-  }
-  .project-container.minus1 {
-    margin-top: -1em;
-  }
-  .project-container.minus2 {
-    margin-top: -2em;
-  }
-  .project-container.minus3 {
-    margin-top: -3em;
-  }
-  .project-container.minus4 {
-    margin-top: -4em;
-  }
+  // .project-container.m-0 {
+  //   margin-top: 0;
+  // }
+  // .project-container.minus1 {
+  //   margin-top: -1em;
+  // }
+  // .project-container.minus2 {
+  //   margin-top: -2em;
+  // }
+  // .project-container.minus3 {
+  //   margin-top: -3em;
+  // }
+  // .project-container.minus4 {
+  //   margin-top: -4em;
+  // }
   #submit-btn {
     background-color: #2f3841;
     color: var(--main-white);
@@ -153,5 +152,33 @@ footer {
   }
   p {
     max-width: 10em;
+  }
+}
+@media only screen and (min-width: 650px) {
+  #projects-section {
+    h2 {
+      text-align: center;
+      max-width: 10em;
+      margin: 0 auto;
+    }
+    .projects-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+    }
+  }
+}
+@media only screen and (min-width: 956px) {
+  #projects-section {
+    h2 {
+      text-align: center;
+      max-width: 16em;
+      margin: 0 auto;
+    }
+    .projects-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+    }
   }
 }
