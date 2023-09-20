@@ -142,4 +142,15 @@ footer {
     height: 0.5em;
     border: none;
   }
+  background-color: #2c2d30;
+  color: var(--main-white);
+  .container {
+    padding: 5em 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  p {
+    max-width: 10em;
+  }
 }
