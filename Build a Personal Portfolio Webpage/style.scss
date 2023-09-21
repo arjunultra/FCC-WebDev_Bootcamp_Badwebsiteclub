@@ -71,6 +71,7 @@ nav {
     align-items: center;
     gap: 1em;
     margin: 2em 0;
+    padding: 1em;
   }
   .project-container {
     display: flex;
@@ -116,11 +117,9 @@ nav {
     margin-top: 2em;
     gap: 1em 2em;
     display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 4em;
   }
-
-  padding-bottom: 5em;
 }
 footer {
   hr.red-line {
@@ -152,8 +151,20 @@ footer {
       justify-items: center;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(3, 1fr);
-      padding: 0;
+      padding: 1em;
     }
+  }
+  #contact-section {
+    .fa-icons-container {
+      margin-top: 2em;
+      gap: 1em 2em;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      padding-bottom: 4em;
+    }
+  }
+  footer p {
+    max-width: 15em;
   }
 }
 @media only screen and (min-width: 956px) {
@@ -163,12 +174,32 @@ footer {
       max-width: 16em;
       margin: 0 auto;
     }
-    .projects-container {
-      display: grid;
-      justify-items: center;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(2, 1fr);
-      gap: 1em;
+    .center-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: -25em;
+      .projects-container {
+        display: grid;
+        justify-items: center;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 1em;
+        padding: 1em;
+        max-width: 50%;
+        align-items: center;
+      }
     }
+  }
+  #contact-section {
+    .fa-icons-container {
+      margin-top: 2em;
+      gap: 1em 2em;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+    }
+  }
+  footer p {
+    max-width: 20em;
   }
 }
