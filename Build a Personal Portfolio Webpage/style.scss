@@ -27,13 +27,22 @@ nav {
   gap: 0 5%;
   font-size: 1.4rem;
   position: fixed;
+  z-index: 2;
   top: 0;
   a {
     color: var(--main-white);
     text-decoration: none;
+    width: 4em;
+    text-align: center;
   }
   a:nth-child(3) {
     margin-right: 2em;
+    width: 5em;
+    text-align: center;
+  }
+  a:hover {
+    background-color: #2c2d30;
+    color: var(--main-white);
   }
 }
 #welcome-section {
@@ -72,6 +81,10 @@ nav {
     gap: 1em;
     margin: 2em 0;
     padding: 1em;
+    a {
+      color: var(--main-white);
+      text-decoration: none;
+    }
   }
   .project-container {
     display: flex;
@@ -98,6 +111,14 @@ nav {
     font-size: 1.2rem;
     font-weight: 400;
     margin-bottom: 2em;
+    position: relative;
+    z-index: 1;
+    .fa-icon {
+      position: absolute;
+      top: 1.6em;
+      left: 7.5em;
+      z-index: 1;
+    }
   }
 }
 #contact-section {
@@ -119,6 +140,10 @@ nav {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding-bottom: 4em;
+    a {
+      color: var(--main-white);
+      text-decoration: none;
+    }
   }
 }
 footer {
