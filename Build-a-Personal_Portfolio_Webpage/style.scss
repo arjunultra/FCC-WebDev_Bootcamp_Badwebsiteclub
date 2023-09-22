@@ -22,7 +22,7 @@ nav {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   font-weight: 400;
   gap: 0 5%;
   font-size: 1.4rem;
@@ -51,7 +51,7 @@ nav {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   padding: 0 2em;
   h1.title {
@@ -166,6 +166,13 @@ footer {
   }
 }
 @media only screen and (min-width: 650px) {
+  nav {
+    justify-content: flex-end;
+  }
+  #welcome-section {
+    align-items: center;
+    text-align: center;
+  }
   #projects-section {
     h2 {
       text-align: center;
