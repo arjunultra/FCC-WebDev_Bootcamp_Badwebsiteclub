@@ -7,13 +7,13 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 body {
   height: 100vh;
   width: 100%;
   font-family: "Poppins", sans-serif;
   background-color: #44557b;
-  overflow-x: hidden;
 }
 nav {
   background-color: #c32f43;
@@ -53,6 +53,7 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 0 2em;
   h1.title {
     color: var(--main-white);
     font-weight: 700;
@@ -115,8 +116,8 @@ nav {
     z-index: 1;
     .fa-icon {
       position: absolute;
-      top: 1.6em;
-      left: 7.5em;
+      top: 1.1em;
+      left: 6.2em;
       z-index: 1;
     }
   }
@@ -201,9 +202,8 @@ footer {
     }
     .center-container {
       display: flex;
-      align-items: center;
+      align-items: stretch;
       justify-content: center;
-      margin-left: -25em;
       .projects-container {
         display: grid;
         justify-items: center;
@@ -211,7 +211,6 @@ footer {
         grid-template-rows: repeat(2, 1fr);
         gap: 1em;
         padding: 1em;
-        max-width: 50%;
         align-items: center;
       }
     }
