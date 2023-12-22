@@ -145,6 +145,11 @@ nav {
       color: var(--main-white);
       text-decoration: none;
     }
+    .flex-container.fa-main {
+      width: 5em;
+      height: 5em;
+      overflow: hidden;
+    }
   }
 }
 footer {
