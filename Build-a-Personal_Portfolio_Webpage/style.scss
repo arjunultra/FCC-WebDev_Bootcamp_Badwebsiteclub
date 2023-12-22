@@ -150,6 +150,10 @@ nav {
       height: 5em;
       overflow: hidden;
     }
+    div#mail-div:hover {
+      cursor: pointer;
+      background-color: greenyellow;
+    }
   }
 }
 footer {
