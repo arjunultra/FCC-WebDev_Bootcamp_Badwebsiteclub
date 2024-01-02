@@ -92,10 +92,15 @@ nav {
     flex-direction: column;
     justify-content: center;
     width: 27em;
+    a {
+      margin: 0;
+      padding: 0;
+    }
     .project-img {
       height: 15em;
       width: 100%;
       object-fit: cover;
+      vertical-align: bottom;
     }
     p {
       padding: 1em 2em;
@@ -114,10 +119,19 @@ nav {
     margin-bottom: 2em;
     position: relative;
     z-index: 1;
+    &:hover {
+      background-color: #c92d42;
+      color: #000000;
+      cursor: pointer;
+    }
+    &:active {
+      background-color: #000000;
+      color: #ffffff;
+    }
     .fa-icon {
       position: absolute;
-      top: 1.1em;
-      left: 6.2em;
+      top: 1.12em;
+      left: 10.9em;
       z-index: 1;
     }
   }
