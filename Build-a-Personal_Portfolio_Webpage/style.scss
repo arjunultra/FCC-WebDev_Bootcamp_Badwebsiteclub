@@ -9,8 +9,6 @@
   scroll-behavior: smooth;
 }
 body {
-  height: 100vh;
-  width: 100%;
   font-family: "Poppins", sans-serif;
   background-color: #44557b;
 }
@@ -76,7 +74,8 @@ nav {
   .projects-container {
     display: grid;
     justify-items: center;
-    grid-template-columns: 1fr;
+    width: min(100%, 85em);
+    grid-template-columns: repeat(auto-fit, minmax(27em, 1fr));
     align-items: center;
     gap: 1em;
     margin: 2em 0;
@@ -90,13 +89,13 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 27em;
+    width: 100%;
     a {
       margin: 0;
       padding: 0;
     }
     .project-img {
-      height: 15em;
+      aspect-ratio: 16/9;
       width: 100%;
       object-fit: cover;
       vertical-align: bottom;
