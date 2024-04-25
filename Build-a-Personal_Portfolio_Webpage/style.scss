@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap");
 :root {
   --main-white: #f0f0f0;
+  --bg-color: #10a14c;
 }
 * {
   margin: 0;
@@ -13,8 +14,8 @@ body {
   background-color: #44557b;
 }
 nav {
-  background-color: #c32f43;
-  color: #ffffff;
+  background-color: var(--bg-color);
+  color: var(--main-white);
   height: 9vh;
   width: 100%;
   display: flex;
@@ -58,7 +59,7 @@ nav {
     padding: 0.1em;
   }
   p {
-    color: #c32f43;
+    color: var(--bg-color);
     font-size: 1.8rem;
     font-weight: 200;
   }
@@ -118,7 +119,7 @@ nav {
     position: relative;
     z-index: 1;
     &:hover {
-      background-color: #c92d42;
+      background-color: var(--bg-color);
       color: #000000;
       cursor: pointer;
     }
@@ -165,7 +166,7 @@ nav {
 }
 footer {
   hr.red-line {
-    background-color: #c32f43;
+    background-color: var(--bg-color);
     height: 0.5em;
     border: none;
   }
