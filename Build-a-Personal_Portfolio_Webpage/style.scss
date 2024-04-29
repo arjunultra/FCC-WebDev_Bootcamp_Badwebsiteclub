@@ -4,14 +4,17 @@
   --bg-color: #10a14c;
 }
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; // Prevent horizontal scrolling
+}
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #44557b;
+  background-color: #333
 }
 nav {
   background-color: var(--bg-color);
@@ -22,7 +25,6 @@ nav {
   align-items: center;
   justify-content: center;
   font-weight: 400;
-  gap: 0 5%;
   font-size: 1.4rem;
   position: fixed;
   z-index: 2;
@@ -32,11 +34,9 @@ nav {
     text-decoration: none;
     width: 4em;
     text-align: center;
-  }
-  a:nth-child(3) {
-    margin-right: 2em;
-    width: 5em;
-    text-align: center;
+    &:nth-child(2) {
+      margin: 0 30px;
+    }
   }
   a:hover {
     background-color: #2c2d30;
@@ -45,18 +45,17 @@ nav {
 }
 #welcome-section {
   background-color: #2c2d30;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  padding: 0 2em;
   h1.title {
     color: var(--main-white);
     font-weight: 700;
     font-size: 3rem;
-    padding: 0.1em;
+    
   }
   p {
     color: var(--bg-color);
@@ -72,11 +71,11 @@ nav {
     text-align: center;
     max-width: 23em;
   }
-  .projects-container {
+  .projects-grid-container {
     display: grid;
     justify-items: center;
     width: min(100%, 85em);
-    grid-template-columns: repeat(auto-fit, minmax(27em, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
     align-items: center;
     gap: 1em;
     margin: 2em 0;
@@ -106,10 +105,11 @@ nav {
       background-color: #2f3841;
       width: 100%;
       height: 4em;
+      margin: 0;
     }
   }
   #submit-btn {
-    background-color: #2f3841;
+    background-color: var(--bg-color);
     color: var(--main-white);
     padding: 1em 2em;
     border: none;
@@ -148,12 +148,16 @@ nav {
     font-weight: 400;
     padding-top: 1em;
   }
-  .fa-icons-container {
-    margin-top: 2em;
-    gap: 1em 2em;
+  .fa-icons-grid-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding-bottom: 4em;
+    justify-items: center;
+    width: min(100%, 85em);
+    grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
+    align-items: center;
+    gap: 1em;
+    margin: 2em 0;
+    padding: 1em;
+    
     a {
       color: var(--main-white);
       text-decoration: none;
@@ -170,83 +174,119 @@ footer {
     height: 0.5em;
     border: none;
   }
+  .footer-grid-container {
+    display: grid;
+    justify-items: center;
+    width: min(100%, 85em);
+    grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
+    align-items: center;
+    gap: 1em;
+    margin: 2em 0;
+    padding: 1em;
+
+  }
   background-color: #2c2d30;
   color: var(--main-white);
-  .container {
-    padding: 5em 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }
-  p {
-    max-width: 10em;
+  
+}
+
+/* Utility Classes */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.container-sm {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Card */
+.card {
+  background-color: #fff;
+  color: #000000;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+// buttons
+.btn {
+  display: inline-block;
+  padding: 13px 20px;
+  background-color: var(--light-color);
+  color: #333;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+  &:hover {
+      opacity: 0.8;
   }
 }
-@media only screen and (min-width: 650px) {
-  nav {
-    justify-content: flex-end;
-  }
-  #welcome-section {
-    align-items: center;
-    text-align: center;
-  }
-  #projects-section {
-    h2 {
-      text-align: center;
-      max-width: 10em;
-      margin: 0 auto;
-    }
-    .projects-container {
-      display: grid;
-      justify-items: center;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(3, 1fr);
-      padding: 1em;
-    }
-  }
-  #contact-section {
-    .fa-icons-container {
-      margin-top: 2em;
-      gap: 1em 2em;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      padding-bottom: 4em;
-    }
-  }
-  footer p {
-    max-width: 15em;
-  }
+.btn-primary {
+  background-color: var(--primary-color);
+  color: #ffffff;
 }
-@media only screen and (min-width: 956px) {
-  #projects-section {
-    h2 {
-      text-align: center;
-      max-width: 16em;
-      margin: 0 auto;
-    }
-    .center-container {
-      display: flex;
-      align-items: stretch;
-      justify-content: center;
-      .projects-container {
-        display: grid;
-        justify-items: center;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        gap: 1em;
-        align-items: center;
-      }
-    }
-  }
-  #contact-section {
-    .fa-icons-container {
-      margin-top: 2em;
-      gap: 1em 2em;
-      display: grid;
-      grid-template-columns: repeat(6, 1fr);
-    }
-  }
-  footer p {
-    max-width: 20em;
-  }
+.btn-dark {
+  background-color: var(--dark-color);
+  color: #ffffff;
+}
+.btn-block {
+  display: block;
+  width: 100%;
+}
+/* Text Classes */
+.text-xxl {
+  font-size: 3rem;
+  line-height: 1.2;
+  font-weight: 600;
+  margin: 40px 0 20px;
+}
+.text-xl {
+  font-size: 2.2rem;
+  line-height: 1.4;
+  font-weight: normal;
+  margin: 40px 0 20px;
+}
+.text-lg {
+  font-size: 1.8rem;
+  line-height: 1.4;
+  font-weight: normal;
+  margin: 30px 0 20px;
+}
+.text-md {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  font-weight: normal;
+  margin: 20px 0 10px;
+}
+.text-sm {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  font-weight: normal;
+  margin: 10px 0 5px;
+}
+.text-center {
+  text-align: center;
+}
+/* Background */
+.bg-primary {
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+.bg-light {
+  background-color: var(--light-color);
+  color: #333;
+}
+.bg-dark {
+  background-color: var(--dark-color);
+  color: #fff;
+}
+.bg-black {
+  background-color: #000000;
+  color: #fff;
 }
