@@ -77,15 +77,18 @@ nav {
   .projects-grid-container {
     display: grid;
     justify-items: center;
+    align-items: center;
     width: min(100%, 85em);
     grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
-    align-items: center;
     gap: 1em;
     margin: 2em 0;
     padding: 1em;
     a {
       color: var(--main-white);
       text-decoration: none;
+    }
+    .project-description {
+      text-align: center;
     }
   }
   .project-container {
@@ -172,6 +175,9 @@ nav {
   }
 }
 footer {
+  .footer-text {
+    text-align: center;
+  }
   hr.red-line {
     background-color: var(--bg-color);
     height: 0.5em;
@@ -181,7 +187,7 @@ footer {
     display: grid;
     justify-items: center;
     width: min(100%, 85em);
-    grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
     align-items: center;
     gap: 1em;
     margin: 2em 0;
